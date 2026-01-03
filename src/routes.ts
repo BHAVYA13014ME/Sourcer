@@ -19,4 +19,5 @@ export const privateRoutes = [
   "/auth/change-password",
   "/hr",
   "/employee",
+  "/profile",
 ];

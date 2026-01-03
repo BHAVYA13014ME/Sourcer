@@ -28,6 +28,33 @@ model User {
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
 
+  // Profile fields
+  jobPosition          String?
+  department           String?
+  manager              String?
+  location             String?
+  dateOfBirth          DateTime?
+  residingAddress      String?
+  nationality          String?
+  personalEmail        String?
+  gender               String?
+  maritalStatus        String?
+  dateOfJoining        DateTime?
+  accountNumber        String?
+  bankName             String?
+  ifscCode             String?
+  panNo                String?
+  uanNo                String?
+  emergencyContactName String?
+  emergencyContactPhone String?
+  emergencyContactRelation String?
+  skills               String?
+  experience           String?
+  education            String?
+  certifications       String?
+  languages            String?
+  resumeFile           String?
+
   accounts Account[]
   sessions Session[]
   employees User[] @relation("HREmployees")
